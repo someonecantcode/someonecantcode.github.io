@@ -16,7 +16,7 @@ body {
   z-index: 10000;
 
   pointer-events: none;
-  opacity: 0;
+  opacity: .5;
   transition: opacity 500ms ease; 
 }
 
