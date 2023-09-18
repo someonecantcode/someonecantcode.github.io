@@ -1,4 +1,5 @@
 const trailer = document.getElementById("trailer");
+setTimeout(() => { }, 2000);
 
 const animateTrailer = (e) => {
   const x = e.clientX - trailer.offsetWidth / 2,
