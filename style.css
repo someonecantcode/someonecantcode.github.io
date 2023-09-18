@@ -1,3 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
 body {
   background-image: linear-gradient(to left, #1c2025, #30353b);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kufam', cursive;
+    font-style: normal;
+}
+
+.background {
+    background-size: cover;
+    height: 300px;
+    padding-bottom: 20px;
+}
+
+.uppernav {
+    text-align: left;
+}
+
+.uppernav ul {
+    display:inline-flex;
+    list-style: none;
+}
+
+.uppernav ul li {
+    width: 12-px;
+    margin: 15px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.uppernav ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    margin: 15px;
+}
+
+.active, .uppernav ul li :hover {
+    background-color: rgb(148, 164, 197);
+    border-radius: 5px;
+}
+
+.uppernav-small ul {
+    display: none;
+    margin: 5px;
+    padding: 5px;
+}
+
+.uppernav-small ul li {
+    list-style: none;
+    font-weight: bold;
+}
+
+.uppernav-small ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.uppernav-small .submenu ul li {
+    padding: 10px;
+    margin: 7px;
+}
+
+.uppernav-small .submenu ul li a {
+    color: #ccc;
+}
+
+.uppernav-small .submenu ul li:hover {
+    border-radius: 3px;
+    background-color: darkblue;
+}
+
+.submenu {
+    display: none;
+}
+
+.uppernav-small ul li:hover .submenu {
+    display: block;
+    position: absolute;
+    background: linear-gradient(#0047ba,#4f92ff);
+}
+
+@media (max-width: 650px) {
+    .uppernav ul     { display: none; }
+    .uppernav-small ul { display: inline-block; }
+  }
+
+h1, h3 {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 15px;
+    color: rgb(25, 26, 25);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: normal;
+}
+
+h4 {
+    margin: 20px;
+}
+
+h5 {
+    padding: 10px;
+    text-decoration: underline;
+}
+
+#skills-label {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.info {
+    padding: 20px;
+    margin: 20px;
+}
+
+.info li {
+    padding: 5px;
+    margin: 2px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+}
+
+.skills-item {
+    width: 200px;
+    margin: 10px;
+}
+
+.tech {
+    min-height: 100px;
+}
+
+.personal {
+    min-height: 100px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.project-item {
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    min-height: 100px;
+    background: linear-gradient(#9198e5, rgb(197, 210, 231));
+    border-radius: 6px;
+}
+
+.imgs {
+    padding: 10px;
+}
+
+.project-showcase {
+    width: 500px;
+    margin: 20px;
+    padding: 20px;
+    min-height: 100px;
+    border: none;
+}
+
+.project-item article {
+    text-indent: 50px;
+}
+
+#showcases-label {
+    margin: 15px;
+    padding: 15px;
+}
+
+
+ul {
+    list-style: circle;
+    list-style-position: inside;
+}
+
+.info img {
+    width: 20vw;
+    height: auto;
+}
+
+.uw-banner {
+    text-align: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github {
+    background: rgb(25, 26, 25);
+    color: white;
+}
+
+.footer {
+    margin: 15px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
 }
