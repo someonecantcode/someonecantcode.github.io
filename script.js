@@ -1,5 +1,5 @@
 const trailer = document.getElementById("trailer");
-
+const page = document.getElementById("page");
 
 const animateTrailer = (e) => {
   const x = e.clientX - trailer.offsetWidth / 2,
@@ -16,7 +16,6 @@ const animateTrailer = (e) => {
   
 }
 
-window.onmousemove = e => {
-  console.log(e.offsetWidth);
+page.onmousemove = e => {
   animateTrailer(e);
 }
