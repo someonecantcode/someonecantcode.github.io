@@ -16,6 +16,8 @@ const animateTrailer = (e) => {
   
 }
 
-page.onmousemove = e => {
-  animateTrailer(e);
-}
+window.onload = function(){ 
+    page.onmousemove = e => {
+       animateTrailer(e);
+    }
+};
