@@ -16,8 +16,6 @@ const animateTrailer = (e) => {
   
 }
 
-window.onload = function(){ 
-    page.onmousemove = e => {
-       animateTrailer(e);
-    }
-};
+document.addEventListener("mousemove", function(e) {
+ animateTrailer(e);
+});
